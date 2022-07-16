@@ -1,7 +1,7 @@
 import { useAuthContext } from "contexts/Auth";
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import router from "next/router";
-import { auth } from '../../contexts/firebase_config'
+import { auth } from './firebase_config'
 
 export let user = undefined
 

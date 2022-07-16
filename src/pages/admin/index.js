@@ -1,7 +1,7 @@
 import { useAuthContext } from 'contexts/Auth';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import { user } from './admin-auth'
+import { user } from '../../contexts/admin-auth'
 import { collection, query, onSnapshot, addDoc } from "firebase/firestore";
 import { db } from 'contexts/firebase_config';
 import Card from './Card';

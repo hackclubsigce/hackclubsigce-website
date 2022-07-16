@@ -3,41 +3,26 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
 import Image from 'components/image';
 
-import img1 from 'assets/partner-1-1.png';
-import img2 from 'assets/partner-1-2.png';
-import img3 from 'assets/partner-1-3.png';
-
-import bannerImg from 'assets/banner-image-1-1.png';
 import { useAuthContext } from 'contexts/Auth';
 
 const Banner = () => {
   const { handleGoogleSignIn } = useAuthContext()
+  console.log(handleGoogleSignIn)
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Code Collaboration Community
+              Hack Club SIGCE
             </Heading>
             <Text as="p">
-              These are the 3 words which describe our club the best. Want to join the club?. Head over to register.
+              We organize, ensure and enlight our members, to be fit for the competitive world! Do join us, to access events, competition and what not!
             </Text>
             <Box as="form" sx={styles.form}>
-              <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
-                subscribe
-              </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder="Subscribe newsletter"
-                sx={styles.form.input}
-              />
-              <Button type="button" sx={styles.form.button}>
-                <span onClick={handleGoogleSignIn} >
-                  Sign In
-                </span>
-              </Button>
+              <button sx={styles.form.button} type="button" onClick={handleGoogleSignIn} >
+                Sign In
+              </button>
             </Box>
           </Box>
           <Box sx={styles.image}>
@@ -81,7 +66,7 @@ const styles = {
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
-      lineHeight: ['26px', null, null, null, 2.33],
+      lineHeight: ['26px', null, null, null, 1.7],
       color: 'text_secondary',
       mb: ['20px', null, null, null, null, '30px'],
       width: ['100%'],
@@ -108,9 +93,13 @@ const styles = {
     button: {
       fontSize: [1, null, null, null, 2, '20px'],
       borderRadius: ['4px'],
-      padding: ['0 8px'],
+      padding: ['10px 8px'],
       ml: ['10px'],
       width: ['auto', null, null, null, '180px'],
+      backgroundColor: '#793677',
+      border: 'none',
+      color: 'white',
+      fontWeight: 'bold'
     },
   },
   image: {

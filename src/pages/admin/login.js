@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { signIn } from './admin-auth';
+import { signIn } from '../../contexts/admin-auth';
 
 const AdminLogin = () => {
 	const [loading, setLoading] = useState(false);

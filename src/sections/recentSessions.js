@@ -74,7 +74,7 @@ const Testimonials = () => {
         <BlockTitle
           slogan="Sessions"
           title="Recent Events and Sessions"
-          styles={styles.blockTitle}
+          style={styles.blockTitle}
         />
         <Swiper
           id="testimonialsContent"

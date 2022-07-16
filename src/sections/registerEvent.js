@@ -4,9 +4,11 @@ import { Box, Container, Button, Input, Heading, Text } from 'theme-ui';
 import { doc, getDoc, increment, setDoc, updateDoc } from "firebase/firestore";
 import { db } from 'contexts/firebase_config';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 
 const RegisterEvent = ({ data }) => {
+  const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [btnText, setBtnText] = useState("Register")
   const { user } = useAuthContext()
@@ -50,6 +52,7 @@ const RegisterEvent = ({ data }) => {
           })
       }
     } else {
+      router.push('/auth')
       setLoading(false)
     }
   }

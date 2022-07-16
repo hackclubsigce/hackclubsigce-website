@@ -21,20 +21,6 @@ const Banner = () => {
             <Text sx={styles.desc} as="p">
               An unified platform for the Technocrats to imbibe skillset and be adept at developing networks with like-minded people.
             </Text>
-            <Box as="form" sx={styles.form}>
-              <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
-                subscribe
-              </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder="Subscribe newsletter"
-                sx={styles.form.input}
-              />
-              <Button type="submit" sx={styles.form.button}>
-                Subscribe
-              </Button>
-            </Box>
             <Box sx={styles.partner}>
               <Text as="span">Sponsored by:</Text>
               <Box as="div">
@@ -105,7 +91,7 @@ const styles = {
   },
   form: {
     mb: ['30px', null, null, null, null, '60px'],
-    display: ['flex'],
+    display: ['hidden'],
     input: {
       borderRadius: ['4px'],
       backgroundColor: '#fff',
