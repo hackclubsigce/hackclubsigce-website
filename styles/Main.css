@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+*,
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Nunito";
+}
+
+.Nunito {
+  font-family: 'Nunito';
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #999;
+  font-family: 'Nunito';
+}
+
+input {
+  outline: none;
+}
+
+button {
+  font-family: 'Nunito';
+  font-size: 16px !important;
+}
+
+.nb-spinner {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background: transparent;
+  border-top: 2px solid #fff;
+  border-right: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s spin linear infinite;
+  animation: 1s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
