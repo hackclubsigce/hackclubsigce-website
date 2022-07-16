@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startup-agency-minimal.vercel.app',
+  siteUrl: 'https://hackclubsigce-website-final.vercel.app',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {
